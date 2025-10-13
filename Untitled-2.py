@@ -1,0 +1,36 @@
+class processor:
+    def plus(a,b):
+        return a+b
+    def minus(a,b):
+        return a-b
+    def multiply(a,b):
+        return a*b  
+    def divide(a,b):
+        return a/b
+x=True
+while x:
+ process=input("Enter the operation you want(+,-,*,/):")
+ a=int(input("Enter the first number:"))
+ b=int(input("Enter the second number:"))
+ if b==0 and process=="/":
+    print("Division by zero is not allowed.")
+    exit()
+ if process not in ['+','-','*','/']:
+    print("Invalid operation.")
+    exit()
+ if process=="+":
+    sum=processor.plus(a,b)
+    print("The sum is:",sum)
+ elif process=="-":
+    difference=processor.minus(a,b)
+    print("The difference is:",difference)
+ elif process=="*":
+    product=processor.multiply(a,b)
+    print("The product is:",product)
+ elif process=="/":
+    quotient=processor.divide(a,b)
+    print("The quotient is:",quotient)
+ elif process=="t":
+    x=False
+    print("Thank you for using the calculator.")
+
