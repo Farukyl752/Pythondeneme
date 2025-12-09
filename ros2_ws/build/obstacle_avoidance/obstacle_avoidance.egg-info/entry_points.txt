@@ -1,0 +1,3 @@
+[console_scripts]
+detect_and_stop = obstacle_avoidance.avoid_node:main
+
